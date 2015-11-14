@@ -10,6 +10,7 @@
     <sprite>sprites\spr_ship</sprite>
     <sprite>sprites\spr_ship_fire</sprite>
     <sprite>sprites\spr_win</sprite>
+    <sprite>sprites\spr_explode_invader</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_space</background>
@@ -20,6 +21,7 @@
     <object>objects\obj_ship</object>
     <object>objects\obj_ship_fire</object>
     <object>objects\obj_win_state</object>
+    <object>objects\obj_explode</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_game</room>
