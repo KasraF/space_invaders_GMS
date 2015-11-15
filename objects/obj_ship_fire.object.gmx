@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>velocity = 0.5;
-acceleration = 0.08;
+acceleration = 0.15;
 </string>
           </argument>
         </arguments>
@@ -58,7 +58,7 @@ hit = instance_place(x, y--, obj_invader);
 if(hit != noone) {
     instance_destroy();
     with (hit) instance_destroy();
-    if (!instance_number(obj_invader)) instance_create(room_width/2, room_height/2, obj_win_state);
+    if (!instance_number(obj_invader) &amp;&amp; !instance_number(obj_lose_state)) instance_create(room_width/2, room_height/2, obj_win_state);
 }
 
 //Boundaries

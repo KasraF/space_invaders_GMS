@@ -29,6 +29,7 @@
 acceleration = 0.2;
 velocity = 3;
 v_max = 5;
+v_min = 2;
 </string>
           </argument>
         </arguments>
@@ -60,7 +61,7 @@ if (move != 0 &amp;&amp; velocity &lt; v_max) {
     velocity += acceleration;
 }
 else if (keyboard_check_released(vk_right) || keyboard_check_released(vk_left)) {
-    velocity = 1;
+    velocity = v_min;
 }
 
 //Move and fire 

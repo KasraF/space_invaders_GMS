@@ -13,12 +13,15 @@
     <sprite>sprites\spr_win</sprite>
     <sprite>sprites\spr_explode_invader</sprite>
     <sprite>sprites\spr_invader_boss</sprite>
+    <sprite>sprites\spr_lose</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_space</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="characters">
       <object>objects\obj_ship</object>
@@ -30,6 +33,7 @@
       <object>objects\obj_invader_fire</object>
       <object>objects\obj_explode</object>
       <object>objects\obj_win_state</object>
+      <object>objects\obj_lose_state</object>
     </objects>
   </objects>
   <rooms name="rooms">
