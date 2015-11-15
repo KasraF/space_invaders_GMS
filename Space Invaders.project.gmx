@@ -9,19 +9,28 @@
     <sprite>sprites\spr_invader</sprite>
     <sprite>sprites\spr_ship</sprite>
     <sprite>sprites\spr_ship_fire</sprite>
+    <sprite>sprites\spr_invader_fire</sprite>
     <sprite>sprites\spr_win</sprite>
     <sprite>sprites\spr_explode_invader</sprite>
+    <sprite>sprites\spr_invader_boss</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_space</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
-    <object>objects\obj_invader</object>
-    <object>objects\obj_ship</object>
-    <object>objects\obj_ship_fire</object>
-    <object>objects\obj_win_state</object>
-    <object>objects\obj_explode</object>
+    <objects name="characters">
+      <object>objects\obj_ship</object>
+      <object>objects\obj_invader</object>
+      <object>objects\obj_invader_boss</object>
+    </objects>
+    <objects name="effects">
+      <object>objects\obj_ship_fire</object>
+      <object>objects\obj_invader_fire</object>
+      <object>objects\obj_explode</object>
+      <object>objects\obj_win_state</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_game</room>
