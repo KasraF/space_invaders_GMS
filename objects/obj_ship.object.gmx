@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Variables
 acceleration = 0.2;
-velocity = 3;
+velocity = 4;
 v_max = 5;
 v_min = 2;
 </string>

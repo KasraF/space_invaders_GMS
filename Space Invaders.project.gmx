@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_invader</sprite>
+    <sprite>sprites\spr_invader_2</sprite>
     <sprite>sprites\spr_ship</sprite>
     <sprite>sprites\spr_ship_fire</sprite>
     <sprite>sprites\spr_invader_fire</sprite>
@@ -20,13 +21,15 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <script>scripts\scr_invader_shooter.gml</script>
+    <script>scripts\scr_game_lose.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="characters">
       <object>objects\obj_ship</object>
       <object>objects\obj_invader</object>
       <object>objects\obj_invader_boss</object>
+      <object>objects\obj_invader_2</object>
     </objects>
     <objects name="effects">
       <object>objects\obj_ship_fire</object>
@@ -39,6 +42,7 @@
   <rooms name="rooms">
     <room>rooms\room_game</room>
     <room>rooms\room_menu</room>
+    <room>rooms\room_boss</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

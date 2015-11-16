@@ -58,7 +58,9 @@ hit = instance_place(x, y--, obj_invader);
 if(hit != noone) {
     instance_destroy();
     with (hit) instance_destroy();
-    if (!instance_number(obj_invader) &amp;&amp; !instance_number(obj_lose_state)) instance_create(room_width/2, room_height/2, obj_win_state);
+    if (!instance_number(obj_invader) &amp;&amp; !instance_number(obj_lose_state)) {
+        room_goto(room_boss);
+    }
 }
 
 //Boundaries
